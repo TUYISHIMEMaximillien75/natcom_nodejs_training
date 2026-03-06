@@ -1,6 +1,7 @@
 import { Routes, Route, Link} from "react-router";
 import Table from "./components/Table";
 import Add from "./components/Add";
+import Update from "./components/update";
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Table/>}></Route>
           <Route path="/add" element={<Add/>}></Route>
+          <Route path="/update/:id" element={<Update/>}></Route>
         </Routes>
       {/* </BrowserRouter> */}
     </>
